@@ -26,9 +26,3 @@ cd Curso_Python
 
 A medida que avanza el curso se incorporan nuevos temas. Para traerlos
 basta con ejecutar `git pull` dentro del repositorio.
-
-## Temas disponibles
-
-| Tema | Contenido |
-|---|---|
-| Tema01 | Entorno de desarrollo |
