@@ -2,10 +2,10 @@
 Debe modificar la copia sin alterar el inventario original.
 """
 inventario = [
-    {"codigo": "SRV01", "uds": 4},
-    {"codigo": "SW01", "uds": 7},
+    {"codigo": "SRV01", "unidades": 4},
+    {"codigo": "SW01", "unidades": 7},
 ]
 respaldo = inventario.copy()
-respaldo[0]["uds"] = 0
-print("Original:", inventario[0]["uds"])
-print("Copia:", respaldo[0]["uds"])
+respaldo[0]["unidades"] = 0
+print("Original:", inventario[0]["unidades"])
+print("Copia:", respaldo[0]["unidades"])

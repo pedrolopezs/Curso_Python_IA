@@ -1,12 +1,12 @@
 """Diccionarios: acceso, modificación y recorrido (Tema 4)."""
-equipo = {"codigo": "SRV01", "tipo": "Servidor", "uds": 4}
+equipo = {"codigo": "SRV01", "tipo": "Servidor", "unidades": 4}
 print(equipo["tipo"], len(equipo))
 print(equipo.get("precio"), equipo.get("precio", 0))
 print("codigo" in equipo, "SRV01" in equipo)
 
 # Agregar, modificar y eliminar
 equipo["garantia"] = True
-equipo["uds"] = 6
+equipo["unidades"] = 6
 print(equipo)
 equipo.update({"ubicacion": "Sala 2"})
 print(equipo["ubicacion"])

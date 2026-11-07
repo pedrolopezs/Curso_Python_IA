@@ -15,5 +15,5 @@ for numero in range(1, 4):
         estado = "stock bajo"
     else:
         estado = "stock correcto"
-    print(f"{equipo}: {unidades} uds ({estado})")
+    print(f"{equipo}: {unidades} unidades ({estado})")
 print(f"Total de unidades: {total}")
