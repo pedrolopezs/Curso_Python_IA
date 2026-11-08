@@ -34,8 +34,8 @@ python Tema05/src/comprobar_eventos.py
 ```
 
 El script `comprobar_eventos.py` muestra un ERROR hasta que se corrige
-`registrar_eventos.py` con `None` como valor por defecto. Para volver al
-fichero original se ejecuta `git restore Tema05/src/registrar_eventos.py`.
+`registrar_eventos.py`. Para volver al fichero original se ejecuta
+`git restore Tema05/src/registrar_eventos.py`.
 
 El script `comprobar_niveles.py` comprueba el fichero `contar_niveles.py`,
 que se genera con la IA local durante el laboratorio y se elimina al
