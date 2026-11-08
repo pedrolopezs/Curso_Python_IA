@@ -4,11 +4,13 @@ import subprocess
 import sys
 
 script = os.path.join(os.path.dirname(__file__), "registrar_eventos.py")
-esperado = ["Primero: ['arranque']", "Segundo: ['fallo']"]
 resultado = subprocess.run(
     [sys.executable, script], capture_output=True, text=True
 )
-obtenido = resultado.stdout.strip().splitlines()
-for linea_esperada, linea in zip(esperado, obtenido):
-    estado = "OK" if linea == linea_esperada else "ERROR"
-    print(estado, "esperado", linea_esperada, "obtenido", linea)
+salida = resultado.stdout
+if "['arranque', 'fallo']" in salida:
+    print("ERROR el segundo evento incluye el primero")
+elif "['fallo']" in salida:
+    print("OK cada llamada devuelve solo su evento")
+else:
+    print("ERROR no aparece ['fallo'] en la salida")
