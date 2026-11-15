@@ -1,0 +1,15 @@
+10.0.0.5 GET /index
+10.0.0.7 GET /admin
+10.0.0.5 POST /login
+10.0.0.9 GET /index
+registro dañado
+10.0.0.5 GET /admin
+10.0.0.7 GET /index
+
+10.0.0.9 GET /login
+10.0.0.8 GET /index
+10.0.0.7 POST /login
+10.0.0.8 GET /admin
+10.0.0.5 GET /index
+10.0.0.9 POST /login
+10.0.0.8 GET /login
