@@ -11,7 +11,7 @@ Ficheros de apoyo del laboratorio del Tema 7.
 | `src/equipo_estado.py` | Métodos, `self` y cambio de estado |
 | `src/representacion.py` | Objetos sin `__str__()` ni `__eq__()` |
 | `src/atributos_clase.py` | Atributos de clase y lista compartida |
-| `src/encapsulacion.py` | Atributo interno con guion bajo y validación |
+| `src/encapsulacion.py` | Atributos internos con uno y con dos guiones bajos, y validación |
 | `src/inventario.py` | Composición con `Inventario` y `Equipo` |
 | `src/herencia.py` | Herencia, `super()` y polimorfismo |
 | `src/equipos.py` | Módulo propio con la clase `Equipo` y bloque `__main__` |

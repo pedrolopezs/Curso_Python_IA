@@ -9,7 +9,7 @@ Cada tema tiene su propio directorio con esta organización.
 
 - `src/`: scripts de Python para ejecutar desde la terminal o desde VS Code.
 - `notebooks/`: los mismos ejercicios en formato notebook de Jupyter.
-- `data/`: ficheros de datos, cuando el tema los necesita.
+- `datos/`: ficheros de datos, cuando el tema los necesita.
 
 ## Entorno de trabajo
 

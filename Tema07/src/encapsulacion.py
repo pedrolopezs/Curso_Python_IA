@@ -1,10 +1,11 @@
-"""Encapsulación por convención con un guion bajo (Tema 7)."""
+"""Encapsulación con uno y con dos guiones bajos (Tema 7)."""
 
 
 class Equipo:
     def __init__(self, nombre):
         self.nombre = nombre
         self._estado = "activo"
+        self.__clave = "abc123"
 
     def cambiar_estado(self, estado):
         if estado not in ("activo", "apagado"):
@@ -13,6 +14,9 @@ class Equipo:
 
     def describir(self):
         return f"{self.nombre}: {self._estado}"
+
+    def comprobar_clave(self, clave):
+        return clave == self.__clave
 
 
 router = Equipo("router01")
@@ -24,3 +28,9 @@ except ValueError as error:
     print(error)
 router._estado = "roto"
 print(router.describir())
+print(router.comprobar_clave("abc123"))
+try:
+    print(router.__clave)
+except AttributeError as error:
+    print(error)
+print(router._Equipo__clave)
