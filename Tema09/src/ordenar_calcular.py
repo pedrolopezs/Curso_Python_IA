@@ -16,4 +16,5 @@ print(activos[["codigo", "precio", "precio_iva"]].head(3))
 
 # Columna con una condición
 activos["gama"] = np.where(activos["precio"] >= 2000, "Alta", "Estándar")
+print(activos[["codigo", "precio", "gama"]].head(3))
 print(activos["gama"].value_counts())

@@ -10,7 +10,7 @@ print(activos[mascara][["codigo", "equipo", "precio"]])
 
 # Condiciones compuestas: & (y), | (o), ~ (no), cada una entre paréntesis
 en_madrid = (activos["ubicacion"] == "Madrid") & (activos["estado"] == "Activo")
-print(activos[en_madrid]["codigo"].tolist())
+print(activos[en_madrid][["codigo", "equipo", "ubicacion", "estado"]])
 
 # isin() y str.contains()
 print(activos[activos["fabricante"].isin(["Dell", "HP"])][["codigo", "fabricante"]])

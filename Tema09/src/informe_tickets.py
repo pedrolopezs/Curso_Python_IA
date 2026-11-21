@@ -3,6 +3,7 @@ import pandas as pd
 
 # N/D se lee como valor ausente
 tickets = pd.read_csv("Tema09/datos/tickets.csv", na_values=["N/D"])
+print(tickets.head(8))
 print(len(tickets), "tickets")
 print("Sin resolver:", tickets["horas_resolucion"].isna().sum())
 print("Media global:", round(tickets["horas_resolucion"].mean(), 2), "h")
