@@ -2,3 +2,10 @@ codigo;equipo;fabricante;precio;estado
 A001;Servidor web;Dell;2450,00;Activo
 A002;Portátil dirección;Lenovo;1320,90;Activo
 A003;Impresora de planta;HP;510,00;Averiado
+A004;Switch de planta 2;Cisco;1890,00;Activo
+A005;Monitor de 27 pulgadas;Dell;289,90;Activo
+A006;Teclado inalámbrico;Logitech;49,95;Activo
+A007;Ratón ergonómico;Logitech;69,00;Retirado
+A008;Router de sucursal;Cisco;1450,00;Activo
+A009;Cámara de videoconferencia;Logitech;399,50;Averiado
+A010;SAI de la sala técnica;APC;840,00;Activo
