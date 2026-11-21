@@ -18,5 +18,8 @@ print(estado, "debe importar pandas")
 hay_bucle = any(linea.strip().startswith("for ") for linea in lineas)
 estado = "ERROR" if hay_bucle else "OK"
 print(estado, "no debe haber un bucle for")
+oculto = any(x in codigo for x in ["apply(", "map(", "lambda"])
+estado = "ERROR" if oculto else "OK"
+print(estado, "no debe usar apply, map ni lambda")
 estado = "OK" if "Traceback" not in resultado.stderr else "ERROR"
 print(estado, "no debe aparecer un traceback")

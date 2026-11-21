@@ -1,5 +1,6 @@
 # Comprueba limpiar_activos.py (Tema 9)
 import os
+import re
 import subprocess
 import sys
 
@@ -17,5 +18,10 @@ with open(script, encoding="utf-8") as fichero:
     codigo = fichero.read()
 estado = "OK" if "import pandas" in codigo else "ERROR"
 print(estado, "debe importar pandas")
+limpia = re.search(r"\[.fabricante.\]\s*\.str\.strip", codigo)
+estado = "OK" if limpia else "ERROR"
+print(estado, "debe quitar espacios a los valores de fabricante")
+estado = "OK" if ".str.lower()" in codigo else "ERROR"
+print(estado, "debe pasar fabricante a minusculas")
 estado = "OK" if "Traceback" not in resultado.stderr else "ERROR"
 print(estado, "no debe aparecer un traceback")
